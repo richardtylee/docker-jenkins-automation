@@ -18,7 +18,7 @@ RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub \
   && echo google-chrome-stable --version
 
 #==================
-# Chrome webdriver
+# Chrome Webdriver
 #==================
 # Credits to https://github.com/elgalu/docker-selenium
 ENV CHROME_DRIVER_VERSION="2.32" \
@@ -52,5 +52,3 @@ ENV MAVEN_HOME /usr/share/maven
 ENV MAVEN_CONFIG "$USER_HOME_DIR/.m2"
 
 VOLUME "$USER_HOME_DIR/.m2"
-
-# USER jenkins
