@@ -1,3 +1,11 @@
+# Ignore mounted configuration directories.
+# These are used to save configurations locally, so state can be kept for
+# Jenkins and Maven.
 jenkins/jenkins_home
 testapp/.m2
+
+# Ignore testapp target
 testapp/target/
+
+# Ignore keys
+*.pem
