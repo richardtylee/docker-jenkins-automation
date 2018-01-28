@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:lts
+FROM openjdk:8-jdk
 
 # Set user root to allow us to install the rest of what's needed
 USER root
@@ -52,3 +52,8 @@ ENV MAVEN_HOME /usr/share/maven
 ENV MAVEN_CONFIG "$USER_HOME_DIR/.m2"
 
 VOLUME "$USER_HOME_DIR/.m2"
+
+ADD . /app
+WORKDIR /app
+
+CMD ["mvn", "test"]
