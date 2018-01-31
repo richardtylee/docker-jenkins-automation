@@ -19,7 +19,7 @@ The Docker image starts with Maven. We then add Chrome and ChromeDriver to power
 Build jenkins.
 
 ```
-docker-compose build .
+docker-compose build
 ```
 
 Build testapp and tag it as `latest`.
